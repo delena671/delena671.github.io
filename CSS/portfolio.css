@@ -1,0 +1,124 @@
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#B0E0E6;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    text-decoration: rgb(26, 8, 8);
+}
+
+li a:hover:not(.active) {
+    background-color: ivory;
+}
+
+.active {
+    background-color: #f0f8ff;
+}
+/* End Navbar */
+
+/* Background Color */
+body {
+    background-color: #AFEEEE;
+}
+/* End Background Color */
+
+/* This is the font for portfolio name */
+.sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*  End This is the font for portfolio name */
+
+/* This is to resize the video I put on my website. */
+video {
+    width: 100%;
+    height: auto;
+}
+
+.column_1 {
+    float: left;
+    width: 47%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: none;
+}
+
+.column_2 {
+    float: right;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #B0C4DE;
+}
+
+.column_3 {
+    float: left;
+    width: 47.5%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: #b0c4de;
+}
+
+/* Contact form */
+input[type=text] { /* This covers the input sections of the contact form */
+	width: 100%;
+	padding: 12px;
+    border: 1px solid #ccc; /* We are setting a solid border and its colors */
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /* This specifies how an element is resized; vertical allows the user to resize the height of the element */
+    font-family: Perpetua, Rockwell Extra Bold; 
+}
+
+/* Submit button */
+input[type=submit] { /* This covers the submit button for the contact form */
+	background-color: rgb(227, 91, 245);
+	color:  white;
+	font-weight: bold;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+	background-color: white; /* Makes the background turn white when hovered over */
+	color: black; /* Makes the font turn black when hovered over */
+	font-weight: bold; /* Makes the font bold when hovered over */
+	transform: scale(1.5); /* Makes the button increase 1.5 times in size */ 
+	transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds from start to finish */
+}
+
+/* Image element hover effects */
+img:hover {
+	filter: grayscale(5%);  /* Brings back most of the image's color when hovered over */
+    transition: transform 1s;
+    transform: scale(1.1);
+}
+
+/* Footer element */
+footer {
+	padding: 2%;
+	background-color:white;
+}
