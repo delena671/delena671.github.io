@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Adeline Cruz</title>
+    <script src="JS/portfolio.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
 </head>
 
@@ -24,8 +25,8 @@
     <br>
     <center>
         <h1 style="color:black;">Adeline Marie Cruz</h1>
-        <h2><p><i>"Love everything you see, including <strong>YOURSELF.</strong>"</i></p></h2>
-        <p><h4>-Anonymous</h4></p>
+        <h2><p style="font-size:3vw;"><i>"Love everything you see, including <strong>YOURSELF.</strong>"</i></p></h2>
+        <p><h3>-Anonymous</h3></p>
         <h4><p>Hello! My name is Adeline, and this is my website portfolio.
         On this portfolio I will share my experiences and journey into becoming a Junior Programmer.
         </p></h4>
@@ -38,6 +39,7 @@
                 Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
         </video>
     </div>
+
     <!--End Video-->
 
 <!--Columns-->
@@ -51,7 +53,7 @@
                 <i><h1>About:</h1></i>
                 <br>
                 <br>    <!--I put breaks in so it can float more towards the center-->       
-                    <center><h3><p>I am a software developer (In the making). 
+                    <center><h3><p>I am a software developer (In the making) at <a href="https://www.learncodinganywhere.com" target="blank">The Tech Accademy</a>. 
                         I was formerly a CPht Certified Pharmacy Technician, 
                         and I love what I did in the Pharmacy. Although, I did 
                         not feel as if I was happy with where I was. My brother Daniel, 
@@ -90,17 +92,20 @@
     <!--Contact Section-->
         <div class="Row" id="Contact">
             <div class="column_1"> <!--Right Column-->
-                <h1><i>Contact:</i></h1>
-                    <form action="" method="get">
+                <h1><i>Contact me here:</i></h1>
+                    <form action="/action_page.php" method="get" class="form-container">
                         <label>Name:</label>
-                            <input type="text" placeholder="Please enter yur full name here.">
+                            <input type="text" placeholder="Please enter your full name here." name="fname" required>
                         <label>Email:</label>
-                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here" name="email" required>
                         <label>Message:</label>
-                            <input type="text" id="Message" name="message" placeholder="Please write your message here">
+                            <input type="text" id="Message" name="message" placeholder="Please write your message here" name="message" required>
+                        <label>Phone Number:</label>
+                            <input type="text" id="Phone Number" name="phone number" placeholder="Please write your phone number here">
                             <input type="submit" value="Submit">
                     </form>
             </div>
+        </div>
             <div class="column_2">
                 <br>
                 <br>
