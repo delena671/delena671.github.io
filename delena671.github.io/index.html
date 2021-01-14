@@ -7,6 +7,14 @@
     <script src="JS/portfolio.js"></script>
     <link rel="stylesheet" type="text/css" href="CSS/portfolio.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        var x = 0;
+        $(document).ready(function(){
+          $("div").scroll(function(){
+            $("span").text( x+= 1);
+        });   //<!--Scroll in about section-->
+        });
+    </script>
     <style>
         div.sticky {
           position: -webkit-sticky;
@@ -16,7 +24,7 @@
           padding: 50px;
           font-size: 20px;
         }
-        </style>
+    </style>
 </head>
 
 <!--This is the body-->
@@ -34,7 +42,7 @@
     <!--This is my Navbar-->
     <div class="Navbar">
         <a class="active" href="#Home">Home</a>
-        <a href="#Slideshow">Slideshow</a>
+        <!-- <a href="#Slideshow">Slideshow</a> -->
         <a href="#About">About</a>
         <a href="#GitHub">GitHub</a>
         <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
@@ -57,7 +65,7 @@
     <br>
     <center>
         <h1 style="color:black;">Adeline Marie Cruz</h1>
-        <h2><p style="font-size:3vw;"><i>"Love everything you see, including <strong>YOURSELF.</strong>"</i></p></h2>
+        <center><h2><p style="font-size:3vw;"><i>"Love everything you see, including <strong>YOURSELF.</strong>"</i></p></h2></center>
         <p><h3>-Anonymous</h3></p>
     </center>
 
@@ -72,43 +80,43 @@
     <!--End Video-->
 
     <!-- Slideshow section -->
-  <div id="Slideshow">
+  <!-- <div id="Slideshow">
     <div id="Slideshow_Background"> 
       <div id="Slideshow_Container">
         
 		<div class="mySlides fade">
           <div class="Slide_Number">1 / 14</div>
-            <img class="Slide_Show_Images" src="a06d98cd-2e64-4afc-bc2c-189878cfe8a0.jpg" style="width:40%">
+            <img class="Slide_Show_Images" src="a06d98cd-2e64-4afc-bc2c-189878cfe8a0.jpg" style="width:30%">
               <div class="text">Family means everything to me</div>
         </div>
         
 		<div class="mySlides fade">
           <div class="Slide_Number">2 / 14</div>
-            <img class="Slide_Show_Images" src="b993bad5-2f63-46a8-9076-59cf166fcc72.jpg" style="width:40%">
+            <img class="Slide_Show_Images" src="b993bad5-2f63-46a8-9076-59cf166fcc72.jpg" style="width:30%">
               
         </div>
 
         <div class="mySlides fade">
           <div class="Slide_Number">3 / 14</div>
-            <img class="Slide_Show_Images" src="baby.png.JPG" style="width:40%">
+            <img class="Slide_Show_Images" src="baby.png.JPG" style="width:30%">
               <div class="text">My oldest niece when she was just a baby</div>
         </div>
 
         <div class="mySlides fade">
           <div class="Slide_Number">4 / 14</div>
-            <img class="Slide_Show_Images" src="baby2.png.JPG" style="width:40%">
+            <img class="Slide_Show_Images" src="baby2.png.JPG" style="width:30%">
               <div class="text"></div>
         </div>
 
 		<div class="mySlides fade">
 	      <div class="Slide_Number">5 / 14</div>
-			<img class="Slide_Show_Images" src="IMG_0830.PNG" style="width:40%">
+			<img class="Slide_Show_Images" src="IMG_0830.PNG" style="width:30%">
               <div class="text"></div>
 			</div>
 
 		<div class="mySlides fade">
 		  <div class="Slide_Number">6 / 14</div>
-			<img class="Slide_Show_Images" src="IMG_0834.JPG" style="width:40%">
+			<img class="Slide_Show_Images" src="IMG_0834.JPG" style="width:30%">
 			  <div class="text"> 
 				<a onclick="openForm()" href="#Contact" style="color:white;">Contact me now!</a>
 			  </div>
@@ -116,49 +124,49 @@
         
         <div class="mySlides fade">
             <div class="Slide_Number">7 / 14</div>
-              <img class="Slide_Show_Images" src="IMG_1140.jpeg" style="width:40%">
+              <img class="Slide_Show_Images" src="IMG_1140.jpeg" style="width:30%">
                 <div class="text"></div>
               </div>
         
         <div class="mySlides fade">
             <div class="Slide_Number">8 / 14</div>
-            <img class="Slide_Show_Images" src="IMG_1144.JPG" style="width:40%">
+            <img class="Slide_Show_Images" src="IMG_1144.JPG" style="width:30%">
                 <div class="text"></div>
             </div>
 
         <div class="mySlides fade">
             <div class="Slide_Number">9 / 14</div>
-            <img class="Slide_Show_Images" src="IMG_1160.JPG" style="width:40%">
+            <img class="Slide_Show_Images" src="IMG_1160.JPG" style="width:30%">
                 <div class="text"></div>
             </div>
 
         <div class="mySlides fade">
             <div class="Slide_Number">10 / 14</div>
-            <img class="Slide_Show_Images" src="IMG_3953.JPG" style="width:40%">
+            <img class="Slide_Show_Images" src="IMG_3953.JPG" style="width:30%">
                 <div class="text"></div>
             </div>
 
         <div class="mySlides fade">
             <div class="Slide_Number">11 / 14</div>
-            <img class="Slide_Show_Images" src="IMG_4027.JPG" style="width:40%">
+            <img class="Slide_Show_Images" src="IMG_4027.JPG" style="width:30%">
                 <div class="text"></div>
             </div>
 
         <div class="mySlides fade">
             <div class="Slide_Number">12 / 14</div>
-                <img class="Slide_Show_Images" src="mom.png.JPG" style="width:40%">
+                <img class="Slide_Show_Images" src="mom.png.JPG" style="width:30%">
                 <div class="text"></div>
                 </div>
 
         <div class="mySlides fade">
             <div class="Slide_Number">13 / 14</div>
-                <img class="Slide_Show_Images" src="work.png.jpeg" style="width:40%">
+                <img class="Slide_Show_Images" src="work.png.jpeg" style="width:30%">
                 <div class="text"></div>
                 </div>
 
         <div class="mySlides fade">
             <div class="Slide_Number">14 / 14</div>
-                <img class="Slide_Show_Images" src="collage_1.png.jpg" style="width:40%">
+                <img class="Slide_Show_Images" src="collage_1.png.jpg" style="width:30%">
                 <div class="text"></div>
                 </div>
 	
@@ -181,13 +189,13 @@
 		<span class="dot" onclick="currentSlide(9)"></span> 
 		<span class="dot" onclick="currentSlide(10)"></span> 
 		<span class="dot" onclick="currentSlide(11)"></span> 
-		<span class="dot" onclick="currentSlide(12)"></span> 		<span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(12)"></span> 		
 		<span class="dot" onclick="currentSlide(13)"></span> 
 		<span class="dot" onclick="currentSlide(14)"></span>  
 
       </div>
     </div>
-  </div>
+  </div> -->
 
 
 <!--Columns-->
@@ -199,7 +207,9 @@
 
             <div class="Column_1"> <!-- Right Column -->
                 <i><h1>About:</h1></i>
-                    <center><h5><p>I am a software developer (In the making) at <a href="https://www.learncodinganywhere.com" target="blank">The Tech Accademy</a>. 
+                <center><div style="border:1px solid black;width:550px;height:300px;overflow:scroll;">
+                    <h6><p>I am a software developer (In the making) at 
+                        <a href="https://www.learncodinganywhere.com" target="blank">The Tech Accademy</a>. 
                         I was formerly a CPht Certified Pharmacy Technician, 
                         and I love what I did in the Pharmacy. Although, I did 
                         not feel as if I was happy with where I was. My brother Daniel, 
@@ -207,13 +217,27 @@
                         for 14 years. I was always interested in computer and the 
                         latest tecnology. So I decided to ask him about what he does, 
                         and from there on I have been enjoying myself, and all 
-                        the new knowlege that I have learned.</p></h5></center>
+                        the new knowlege that I have learned.</p></h6>
+                    <br>
+                    <h6><p>
+                        <center><img src="Guam.png" alt="Hafadai"></center>
+                        Here is a little more about me. I was born in Lawton, Oklahoma. but I was 
+                        raised on Guam for almost my whole life. I was about 9 months when we moved back to Guam. 
+                        Guam is where my father was born and raised until he joined the Army and left to 
+                        the states. Growing up on an island was great, I mean you get to see the beaches everyday.
+                        I was always interested in computer. I always had the latest computer,
+                        phone, iPad, iPod, ect. Although, I really had no clue about coding. So I thought, let me 
+                        try this out. I see my brother doing it and got even more interested. So far the time I spent
+                        in the tech Accademy I have learned so much. 
+                    </p></h6>
+                    
+                </center></div>
             </div>
         </div>
 
     <!--GitHub Section-->
         <div class="Row" id="GitHub">
-            <div class="Column_1">  <!--left column-->         
+            <div class="Column_1">  <!--left column-->       
                 <br>    <!--I put breaks in so it can float more towards the center-->       
                 <br>
                 <center><a href="https://github.com/delena671" target="blank"><img src="GitHub-4.1.png" alt="GitHub"></a></center>
@@ -221,6 +245,7 @@
 
             <div class="Column_2"> <!-- Right Column -->
                 <h1><i>GitHub:</i></h1>
+                <center><div style="border:1px solid black;width:550px;height:300px;overflow:scroll;">
                 <br>    <!--I put breaks in so it can float more towards the center-->
                 <br>
                 <br>
@@ -228,9 +253,12 @@
                          . This is where you can find all of my projects that 
                          I have done so far. (YOU CAN ALSO CLICK THE IMAGE TO GOT TO MY GitHub)
                     </b></p></h3></center>
-                    <center><p>I have completed the C# course, and now I am on my way to my Live Project. 
+                    <center><p>
+                        I have completed the C# course, and now I am on my way to my Live Project. 
                         C# is a tough language, and although I know it, I feel like I still have a lot of 
-                        learning to do. I have done some major projects, which you can see here in my GITHUB.</p></center>
+                        learning to do. I have done some major projects, which you can see here in my GITHUB.
+                    </p></center>
+                </div>
             </div>
         </div>
 
@@ -255,10 +283,24 @@
                     </form>
             </div>
         </div>
+        <div class="Row" id="GitHub">
+            <div class="Column_2">  <!--left column--> 
+                <center><h1><i>Projects:</i></h1></center>
+                <center><div style="border:1px solid black;width:550px;height:300px;overflow:scroll;">    
+                <br>    <!--I put breaks in so it can float more towards the center-->       
+                <br>
+                <center><h3>Here are a couple of my C# programs that I've done.</h3></center>
+                <center><a href="https://github.com/delena671/Basic-C-Sharp-Projects/tree/main/CarInsurance" taeget="blank">
+                    CarInsurance: Click here to see my Car Insurence Project.</a></center>
+                    <center><p>ContosoUniversity was a tutorial based on Entity Framework and ASP.NET Framework 6 MVC5.</p></center>
+                <center><a href="https://github.com/delena671/Basic-C-Sharp-Projects/tree/main/ContosoUniversity" taeget="blank">
+                    ContosoUniversity: Click here to see my ContosoUniversity Project.</a></center>
+                </div></center>
+            </div>
             <div class="column_2">
                 <br>
                 <br>
-                <br>    <!--I am putting breaks in to make the photo sit in the center-->
+                <br><!-- I am puting these breaks in hear to center the image a little more -->
                 <br>
                 <br>
                 <center><img src="title_image_find_motivation.1.png" alt="Contact_Image"></center>
@@ -277,13 +319,13 @@
         <div class="Row" id="The Tech Accademy">
             <div class="column_1">
                 <h1><i>The Tech Accademy:</i></h1>
-                <div class="sticky">Want to further your knowlege with codes? Then click the button below.
-                </div>
+                <div class="sticky"><center>Want to further your knowlege with codes? Then click the button below.
+                </div></center>
                 <br>
                 <br><button class="button button4"><a href="https://www.learncodinganywhere.com/Contact" target="blank">Apply Now!</a></button>
                 <p style="font-size:3vw;"><center>I joined the Tech Accademy around the begining of
                     August of this year. I had no coding experience, and I was worried about how the courses
-                    would be like. However, as soon as I began my courses everything felt comfortable. The in 
+                    would be like. However, as soon as I began my courses everything felt comfortable. 
                 
                 
                 
