@@ -75,21 +75,21 @@ html {
     to {top: 0px;}
   }
   
-  /* Navbar hover effect */
+  /* Navbar hover effect*/
   .Navbar a:hover {
-    background-color: #F4F4F4; /*  This defines the background color that will display when you hover over the text on the navbar */
+    background-color: #F4F4F4; /* This defines the background color that will display when you hover over the text on the navbar*/
     color: black; /* This defines the font color that will display when you hover over the text on the navbar */ 
     font-weight: bold; /* This makes the text on the navbar bold when hovered over */
     cursor: pointer;
     -webkit-transition-duration: 1s; 
     transition-duration: 1s;
-  }
+  } 
   
   /* Navbar home button */
   .Navbar a.active { /* The active selector styles a link */
     background-color: darkgray;  /* This specifies the background color behind the Home button on the navbar */ 
   }
-  
+
   /* This causes the video to zoom out from a zoomed in position upon page load */
   @keyframes zoominoutsinglefeatured {
       0% {
