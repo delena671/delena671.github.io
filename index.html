@@ -20,9 +20,15 @@
           position: -webkit-sticky;
           position: sticky;
           top: 0;
-          background-color: paleturquoise;
+          background-color: #DCDCDC;
           padding: 50px;
           font-size: 20px;
+        }
+        body {
+        background-image: url('Abstract.png');
+        background-repeat: no-repeat;   /*This is for the background picture instead of a video*/
+        background-attachment: fixed;  
+        background-size: cover;
         }
     </style>
 </head>
@@ -54,11 +60,11 @@
     <!--HR TAG-->  
     <br>
     <br>
-    <center><h1><i>Hafa adai!</i></h1></center>
+
+    <div class="Row" id="Home">
+        <center><h1><i>Hafa adai!</i></h1></center>
     <hr> <!--Horizontal rule tag-->
-    <h3><p>My name is <b><i>Adeline</i></b>, and this is my website portfolio.
-        On this portfolio I will share my experiences and journey into becoming a Junior Programmer.
-        </p></h3>
+    </div>
 
     <!--/End Navbar-->
 
@@ -66,20 +72,22 @@
     <br> <!--Inserted break to add space navbar and heading-->
     <br>
     <center>
-        <h1 style="color:black;">Adeline Marie Cruz</h1>
+        <h1 style="color:#D3D3D3;">Adeline Marie Cruz</h1>
         <center><h2><p style="font-size:3vw;"><i>"Love everything you see, including <strong>YOURSELF.</strong>"</i></p></h2></center>
-        <p><h3>-Anonymous</h3></p>
+        <h1>-Anonymous</h1>
     </center>
 
-    <!--Video-->
-    <div id="Home">
-        <video autoplay muted loop id="programming_video"><!--This will make the video play automatically, with no sound, and rea\play with a loop-->
-            <source src="programming.mp4" type="video/mp4">
-                Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
-        </video>
-    </div>
+    <!-- Video-->
+    <!-- <div id="Home">
+            <video autoplay muted loop id="programming2_video">This will make the video play automatically, with no sound, and rea\play with a loop-->
+                <!-- <source src="programming2.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video. Display message if video fails to run -->
+            <!--</video>-->     
+    <!--</div> -->
 
-    <!--End Video-->
+    <!--End Video -->
+
+
 
 <!--Columns-->
     <!--About Section-->
@@ -89,10 +97,12 @@
             </div>
 
             <div class="Column_1"> <!-- Right Column -->
-                <i><h1>About:</h1></i>
+                <center><i><h2>About:</h2></i></center>
                 <center><div style="border:1px solid black;width:550px;height:300px;overflow:scroll;">
-                    <h6><p>I am a software developer (In the making) at 
-                        <a href="https://www.learncodinganywhere.com" target="blank">The Tech Accademy</a>. 
+                    <p>
+                        My name is <b><i>Adeline</i></b>, and this is my website portfolio.
+                        On this portfolio I will share my experiences and journey into becoming 
+                        a Junior Programmer.
                         I was formerly a CPht Certified Pharmacy Technician, 
                         and I love what I did in the Pharmacy. Although, I did 
                         not feel as if I was happy with where I was. My brother Daniel, 
@@ -100,9 +110,10 @@
                         for 14 years. I was always interested in computer and the 
                         latest tecnology. So I decided to ask him about what he does, 
                         and from there on I have been enjoying myself, and all 
-                        the new knowlege that I have learned.</p></h6>
+                        the new knowlege that I have learned.
+                    </p>
                     <br>
-                    <h6><p>
+                    <p>
                         <center><img src="Guam.png" alt="Hafadai"></center>
                         Here is a little more about me. I was born in Lawton, Oklahoma. but I was 
                         raised on Guam for almost my whole life. I was about 9 months when we moved back to Guam. 
@@ -112,7 +123,7 @@
                         phone, iPad, iPod, ect. Although, I really had no clue about coding. So I thought, let me 
                         try this out. I see my brother doing it and got even more interested. So far the time I spent
                         in the tech Accademy I have learned so much. 
-                    </p></h6>
+                    </p>
                     
                 </center></div>
             </div>
@@ -127,15 +138,15 @@
             </div>
 
             <div class="Column_2"> <!-- Right Column -->
-                <h1><i>GitHub:</i></h1>
+                <center><h2><i>GitHub:</i></h2></center>
                 <center><div style="border:1px solid black;width:550px;height:300px;overflow:scroll;">
                 <br>    <!--I put breaks in so it can float more towards the center-->
                 <br>
                 <br>
-                    <center><h3><p><b>This is a link to my <a href="https://github.com/delena671">GitHub</a>
+                    <center><p>This is a link to my <a href="https://github.com/delena671">GitHub</a>
                          . This is where you can find all of my projects that 
-                         I have done so far. (YOU CAN ALSO CLICK THE IMAGE TO GOT TO MY GitHub)
-                    </b></p></h3></center>
+                         I have done so far. (YOU CAN ALSO CLICK THE IMAGE TO GO TO MY GitHub)
+                    </p></center>
                     <center><p>
                         I have completed the C# course, and now I am on my way to my Live Project. 
                         C# is a tough language, and although I know it, I feel like I still have a lot of 
@@ -197,11 +208,6 @@
                 </div></center>
                 <br>
                 <br><button class="button button4"><a href="https://www.learncodinganywhere.com/Contact" target="blank">Apply Now!</a></button>
-                <p style="font-size:3vw;"><center>I joined the Tech Accademy around the begining of
-                    August of this year. I had no coding experience, and I was worried about how the courses
-                    would be like. However, as soon as I began my courses everything felt comfortable. 
-                
-                </p>
             </div>
         </div>
 
@@ -210,7 +216,7 @@
  
 <div class="Row" id="Projects">
     <center><h1><i>Projects:</i></h1></center>
-    <center><div style="background:#FFF0F5;border:1px solid black;width:1360px;height:300px;overflow:scroll;">    
+    <center><div style="background:#FFF0F5;border:1px solid black;width:1360px;height:150px;overflow:scroll;">    
     <br>    <!--I put breaks in so it can float more towards the center-->       
     <br>
     <center><h3>Here are a couple of my C# programs that I've done.</h3></center>
@@ -231,7 +237,7 @@
 <!--Footer section-->
     <footer>
         <p>
-            <center>&copy The Tech Accademy Student &copy Adeline Cruz Portfolio 2020<a href="https://learncodinganywhere.com/"></a></center>
+            <center>&copy Adeline Cruz Portfolio 2021<a href="https://learncodinganywhere.com/"></a></center>
         </p>
     </footer>
 

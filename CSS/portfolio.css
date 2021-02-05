@@ -87,7 +87,7 @@ html {
   
   /* Navbar home button */
   .Navbar a.active { /* The active selector styles a link */
-    background-color: darkgray;  /* This specifies the background color behind the Home button on the navbar */ 
+    background-color: #D8BFD8;  /* This specifies the background color behind the Home button on the navbar */ 
   }
 
   /* This causes the video to zoom out from a zoomed in position upon page load */
@@ -101,9 +101,10 @@ html {
   }
   
   /* Video */
-  #programming_video {
+  #programming2_video {
       position: fixed; /* This fixes our video to the page  */
-      right: 0; /* This ensures no space between the edge of the video and the edge of the page */
+      left: 0;
+      right: 0; /*This ensures no space between the edge of the video and the edge of the page */
       bottom: 0; /* This ensures no space between the edge of the video and the edge of the page */
       min-height: 100%; /* This ensures the video is displayed across the full height of the page */
       top: 0;
@@ -113,7 +114,7 @@ html {
   
   /* Text over the video */ 
   .Video_Text { 
-      background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
+      background:#D3D3D3; /* This provides a semi-transparent background for the text to sit over */
       color: white; 
       width: 100%;
       padding-top: .1vh; /* This adds padding around the text so that the background goes slightly beyond the text */
@@ -252,19 +253,21 @@ html {
   }
   
   .Column_1 {
+      color:	#000000;
       float: left;  
       width: 50%; /* This ensures one column takes up half the page width */
       padding: 1.6%; 
-      background-color: #f2f2f2; 
+      background-color: #DDA0DD; 
       height: 448px; /* You may need to adjust this to fit your content */
   }
   
   .Column_2 {
+      color:	#000000;
       float: left;
       width: 50%;
       padding: 1.6%;
       height: 448px; /* You may need to adjust this to fit your content */
-      background-color: #4d4d4d;
+      background-color: 	#D8BFD8;
   }
   
   .Row:after { /* This inserts something after the content of selected elements */
@@ -279,18 +282,19 @@ html {
       font-family: "Trebuchet MS", Optima; 
       text-align: center;
       margin-top: 3%; /* We are adding a small margin above the headings */
-      color: #1a1a1a;
+      color: #D3D3D3;
   }
   
   /* Paragraph elements */
   p {
+      color:#1E90FF;
       font-family: Perpetua, Rockwell Extra Bold;
       text-align: justify;
       letter-spacing: .1vw; /* This expands the text slightly */
       font-size: 1.5vw;
       padding-left: 1vw;
       padding-right: 1vw;
-  }
+  } 
   
   /* Center align elements - this embraces all centered text */
   center {
@@ -304,7 +308,7 @@ html {
   
   /* Anchor elements */
   a {
-      color: blue; /* We are ensuring all links are blue */
+      color: #00BFFF; /* We are ensuring all links are blue */
   }
   
   /* Quotation elements */
@@ -331,14 +335,14 @@ html {
   
   /* Paragraph element hover effect */
   p:hover {
-      color: #00004d;	
+      color:#00FFFF ;	
       transition: transform 1s;
       transform: scale(1.01);
   }
   
   /* Heading 1 element hover effect */
   h1:hover {
-      color: black;
+      color: #D3D3D3;
       font-weight: normal; /* Makes the text no longer bold when hovered over */ 
   
   }
