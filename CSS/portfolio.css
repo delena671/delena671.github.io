@@ -447,7 +447,7 @@ html {
     -webkit-transition-duration: 1s; 
     transition-duration: 1s;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(197, 186, 186);
   }	
   
   /* Footer element */
